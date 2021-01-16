@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+body {
+    background-color: #fafbfd !important;
+}
+
+.default-card {
+    border: 0px !important;
+    box-shadow: 0 0 9px #d3d3d6;
+}
+
+.card {
+    border-radius: 0.8em !important;
+}
+
+h2 {
+    color: #535659;
+    font-weight: bold !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    color: #5e6064;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}

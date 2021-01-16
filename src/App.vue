@@ -1,17 +1,19 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!--<img alt="Vue logo" src="./assets/logo.png">-->
+    <b-container>
+      <Autorization msg="Hola" />
+    </b-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Autorization from './components/Autorization.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Autorization
   }
 }
 </script>
