@@ -21,10 +21,7 @@
 
 <script>
 export default {
-  name: 'Autorization',
-  props: {
-    msg: String
-  }
+  name: 'Autorization'
 }
 </script>
 
@@ -102,5 +99,19 @@ export default {
         color: #496db4;
         font-weight: bold;
         font-size: 20px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .btn-green {
+            width: 100%;
+        }
+
+        ul.option-list li:first-child {
+            border-right: 0;
+        }
+
+        .separate div {
+            width: 50px;
+        }
     }
 </style>

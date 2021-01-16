@@ -9,8 +9,18 @@ body {
     box-shadow: 0 0 9px #d3d3d6;
 }
 
+#app {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.container {
+    margin: 25px 0 25px 0;
+}
+
 .card {
     border-radius: 0.8em !important;
+    margin-top: 25px;
 }
 
 h2 {
