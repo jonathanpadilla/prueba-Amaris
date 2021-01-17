@@ -14,9 +14,9 @@
                 </b-card-body>
             </b-card>
         </b-col>
-        <b-modal id="modal-1" hide-footer size="lg">
+        <b-modal id="modal-1" ref="modal-1" hide-footer size="lg">
             <div class="modal-container">
-                <CallUs />
+                <CallUs @sent="sentCallUs" />
             </div>
         </b-modal>
     </b-row>
@@ -29,6 +29,12 @@ export default {
   name: 'Help',
   components: {
     CallUs
+  },
+  methods: {
+      sentCallUs(value) {
+          if(value)
+            this.$refs['modal-1'].hide()
+      }
   }
 }
 </script>

@@ -36,6 +36,7 @@
 </template>
     
 <script>
+    import axios from "axios";
     export default {
     name: 'CallUs',
     data() {
@@ -51,6 +52,14 @@
         onSubmit(event) {
             event.preventDefault()
             console.log(this.form)
+
+            this.getData()
+
+            this.$emit('sent', true)
+        },
+        getData() {
+            axios.get('https://jsonplaceholder.typicode.com/todos')
+            .then(response => console.log(response.data))
         }
     }
 }
