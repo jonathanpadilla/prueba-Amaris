@@ -69,3 +69,7 @@ p {
 .modal-header {
     border-bottom: 0 !important;
 }
+
+.form-control {
+    color: #7f8184 !important;
+}

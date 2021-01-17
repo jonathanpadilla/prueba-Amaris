@@ -7,7 +7,7 @@
                     <h3 class="subtitle">Puedes autorizar en línea con:</h3>
                     <ul class="option-list">
                         <li><img alt="claveunica" src="@/assets/images/claveunica.png"></li>
-                        <li><img alt="claveunica" src="@/assets/images/claveunica.png"></li>
+                        <li><span><b-icon icon="chat-square-dots" /> Desafío de preguntas</span></li>
                     </ul>
                     <b-button class="btn-green">Autorización en línea</b-button>
                     <p class="text-info">Para autorizar será redirigido al sitio de Mobisigner.</p>
@@ -34,7 +34,7 @@ export default {
 
     ul.option-list li {
         display: inline-block;
-        padding: 10px 35px 10px 35px;
+        padding: 10px 35px 6px 35px;
         margin: 0;
     }
 
@@ -42,10 +42,20 @@ export default {
         border-right: 2px solid #dedede;
     }
 
+    ul.option-list li:last-child {
+        padding-top: 2px;
+    }
+
     ul.option-list li img {
         width: 198px;
         margin: 0;
         filter: grayscale(100%);
+    }
+
+    ul.option-list li span {
+        font-size: 22px;
+        color: #7e7f82;
+        font-weight: bold;
     }
 
     .btn-green {
