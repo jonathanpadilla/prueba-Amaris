@@ -36,3 +36,36 @@ h3 {
 p {
     font-family: 'Open Sans', sans-serif;
 }
+
+.modal-body {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.info-help {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.info-help p{
+    color: #96989a;
+    margin: 0;
+    font-size: 18px;
+}
+
+.line-1 {
+    width: 100%;
+    height: 1px;
+    border: 1px solid #eaeaea;
+    margin: 24px 0 24px 0;
+}
+
+.label-f {
+    color: #64676a;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.modal-header {
+    border-bottom: 0 !important;
+}

@@ -5,7 +5,7 @@
                 <b-card-body>
                     <ul class="list-help">
                         <li><h3>¿Nevesitas ayuda para continuar?</h3></li>
-                        <li><b-button>Te llamamon gratis</b-button></li>
+                        <li><b-button v-b-modal.modal-1>Te llamamon gratis</b-button></li>
                     </ul>
                     <div class="info-help">
                         <p>Te llamamos de Lunes a Viernes de 8:00 a 18:00 hrs.</p>
@@ -14,12 +14,22 @@
                 </b-card-body>
             </b-card>
         </b-col>
+        <b-modal id="modal-1" hide-footer size="lg">
+            <div class="modal-container">
+                <CallUs />
+            </div>
+        </b-modal>
     </b-row>
 </template>
 
 <script>
+import CallUs from '@/components/CallUs.vue'
+
 export default {
-  name: 'Help'
+  name: 'Help',
+  components: {
+    CallUs
+  }
 }
 </script>
 
@@ -48,17 +58,6 @@ export default {
     .list-help li h3 {
         margin: 0;
         font-size: 24px;
-    }
-
-    .info-help {
-        text-align: center;
-        margin-top: 30px;
-    }
-
-    .info-help p{
-        color: #96989a;
-        margin: 0;
-        font-size: 18px;
     }
 
     @media only screen and (max-width: 768px) {
