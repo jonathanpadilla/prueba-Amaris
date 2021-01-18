@@ -5,7 +5,7 @@
                 <b-card-body>
                     <ul class="list-help">
                         <li><h3>¿Nevesitas ayuda para continuar?</h3></li>
-                        <li><b-button v-b-modal.modal-1>Te llamamon gratis</b-button></li>
+                        <li><b-button v-b-modal.modal-1>Te llamamos gratis</b-button></li>
                     </ul>
                     <div class="info-help">
                         <p>Te llamamos de Lunes a Viernes de 8:00 a 18:00 hrs.</p>
